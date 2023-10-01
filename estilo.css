@@ -1,0 +1,275 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+:root{
+  text-transform: uppercase; 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Amatic SC', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Satisfy', cursive;
+}
+
+header{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.header_content_logo {
+  text-align: center;
+  margin: auto;
+  display: block;
+  flex-wrap: nowrap;
+  align-items: center;
+  Justify-content:center;
+  font-weight: 400;
+  padding: 1em;
+  background-color: #F2E6A7; 
+  background-image: url(imagem/pexels-tom-swinnen-2249961.jpg);
+  background-size: cover;
+  border-radius: 3em;
+}
+
+.logo_menu{
+  width: 3em;
+  height: auto;
+  border-radius: 3em;  
+}
+
+#hamburguer{
+  background-color:#F2E6A7;
+  color: #0D0D0D;
+  display: block;
+  text-align: center;
+  padding: 0.3em;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 400;
+  border-radius: 3em;
+}
+
+#hamburguer:hover{
+  background-color:#F2C48D ;
+  color:#30BFBF;
+}
+
+.header_nav{
+  background-color:#F2E6A7 ;
+  display: none;
+  border-radius: 3em;
+}
+
+.header_nav.show {
+  display: block;
+}  
+
+ul{
+  margin: 0;
+}
+
+.header_nav ul{
+  list-style-type: none;
+  padding: 0;
+  letter-spacing: .2em;
+  font-size: .9em;
+  border-radius: 3em;
+}
+
+.header_nav a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.header_nav a:hover{
+  background-color:#F2C48D;
+  color:#30BFBF;
+  transition: .7s;
+  border-radius: 3em;
+}
+
+.main_content{
+  margin: 0;
+  text-align: center;
+  
+}
+
+.main_content-section{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  padding: 3.5em;
+  background-color:#F2C48D ;
+}
+
+h4 {
+padding: 3.5em;
+color:#30BFBF ;
+}
+
+ul{
+  list-style-type: none;
+}
+.section_img{
+  padding: 3em;
+}
+.videocontent{
+display: flex;
+}
+
+.main_section{
+  background-color: #F2C48D;
+}
+
+.img_inicio{
+  border-radius: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align:right;
+}
+.videocontent{
+display: flex;
+}
+
+.section_img ol{
+  text-indent: 1em;
+  font-weight: 400;
+  letter-spacing: .1em;
+  padding: 3em;
+}
+.section_img ul{
+  text-indent: 1em;
+  font-weight: 400;
+  letter-spacing: .1em;
+  padding: 3em;
+}
+
+.img_contato{
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: lowercase;
+  color: black;
+  padding: .3em;
+}
+
+.img_contato:hover{
+  background-color:#F2C48D ;
+  color:#30BFBF ;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.midias_footer ul{
+    list-style-type: none;
+    background-color:#91BFBF;
+    display: flex;
+    justify-content: center;
+    text-indent: 1em;
+    padding: 3em;
+    color:#30BFBF ;
+}
+.futuro{
+  font-family: 'montserrat';
+}
+
+.icone-src{
+list-style-type: none;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+      #hamburguer{
+      display: none;
+      }
+
+      header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      height: 30px;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 600;
+      }
+
+      .logo_menu{
+      margin-left: 2em;
+     display: none;
+      }
+      
+      .header_nav{
+      display: block;
+      }
+
+      .header_nav ul{
+      margin-right: 2em;
+      font-size: .8em;
+      }
+
+      .header_nav li{
+      display: inline-block;
+      }
+
+      .header_nav a{
+      border-radius: 3px;
+      }
+
+      .header_nav a:hover{
+      background-color: #F2C48D;
+      color:#30BFBF ;
+      }
+      .main_content-section {
+        display: flex;
+        transition: 1s;
+
+      }
+      .section_img{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10em;
+        text-align: center;
+        justify-content: center;
+        text-indent: .8em;  
+      }
+      .img_inicio{
+      align-items: start;
+      }
+      
+      .videocontent{
+        display: flex;
+      }
+     
+      h4{
+        text-align: left;
+      }
+     
+      .midias_footer{
+        list-style-type: none;
+        padding: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #30BFBF;
+     }
+}
+
+
+
+
+
